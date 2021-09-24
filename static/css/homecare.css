@@ -1,0 +1,258 @@
+div {
+    display: block;
+}
+.top-menu {
+    min-height: 0px;
+}
+
+.top-menu {
+    width: 100%;
+    background: #fff;
+    min-height: auto;
+}
+container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.row {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.logo-wrap {
+    float: left;
+    height: 80px;
+}
+.modal-box {
+    width: 70%;
+}
+
+ol, ul {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.one {
+    color: #3c994a;
+    font-size: 12px;
+    font-weight:Bold
+}
+.one {
+    font-size: 14px !important;
+    }
+
+ul.social-network {
+    padding: 0;
+    float: right;
+}
+ul.social-network li {
+    /* display: inline; */
+    /* margin: 15px 0px 0px 0px; */
+    float: left;
+    text-align: center;
+    list-style-type: none;
+}
+.social-icon {
+    float: left !important;
+    margin-left: -150px;
+}
+.list-inline>li {
+    padding-right: 15px;
+}
+.social-circle li a {
+    display: inline-block;
+    margin: 0 auto 0 auto;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    text-align: center;
+    width: 35px;
+    height: 35px;
+    font-size: 18px;
+    background-color: #210b7a;
+}
+.social-circle i {
+    color: #fff;
+    -webkit-transition: all 0.8s;
+    -moz-transition: all 0.8s;
+    -o-transition: all 0.8s;
+    -ms-transition: all 0.8s;
+    transition: all 0.8s;
+}
+.social-circle li i {
+    margin: 0;
+    line-height: 35px;
+    text-align: center;
+}
+.list-inline {
+    padding-left: 0;
+    margin-left: -5px;
+    list-style: none;
+}
+.logo-menu-right {
+    float: right;
+    margin-top: 30px;
+}
+.logo-menu-right ul li {
+    padding-left: 0px;
+    height: 23px;
+    position: relative;
+    float: left;
+    font-size: 14px;
+    color: #0e0e0e;
+    font-weight: 400;
+    padding-right: 10px;
+    margin-right: 10px;
+    margin-bottom: 15px;
+}
+
+#about_content{
+text-align: justify;
+ }
+
+ .center-align{
+ text-align:center;
+ color: #210b7a;
+ }
+
+.right-align{
+text-align:right;
+}
+
+.left-align{
+align-content: left;
+}
+
+.blue-border{
+ border: 2px solid #210b7a;
+ border-radius: 30px;
+    margin: 20px auto;
+    padding: 10px 25px;
+    margin-left: 10px;
+    max-width: 730px;
+    display: inline-block;
+    width: 100%;
+}
+.quick_appointment_widget .form-group {
+    position: relative;
+    margin-bottom: 10px;
+}
+.datetimepicker {
+    display: inline-flex;
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid #ced4da;
+    border-radius: .2rem;
+    width: 100%
+}
+
+input {
+		font: inherit;
+		color: inherit;
+		appearance: none;
+		outline: none;
+		border: 0;
+		background-color: transparent;
+
+		&[type=date] {
+			width: 10rem;
+			padding: .25rem 0 .25rem .5rem;
+			border-right-width: 0;
+		}
+
+		&[type=time] {
+			width: 5.5rem;
+			padding: .25rem .5rem .25rem 0;
+			border-left-width: 0;
+		}
+	}
+
+.img-background-color{
+border-radius: 3px;
+}
+.service-box{
+border: 1px solid #C3C2C2;
+background: #e9ecef;
+border-radius: 25px;
+box-shadow: 2px 5px #C3C2C2;
+background-image: linear-gradient(to right, #3c994a, #210b7a);
+width: 550px;
+height: 55px;
+box-decoration-break: clone;
+}
+
+.service-name{
+color:White;
+font-weight:Bold;
+font-style: italic;
+
+}
+.spacing{
+word-spacing: 5px;
+}
+.rating {
+  display: inline-block;
+  position: relative;
+  height: 20px;
+  line-height: 30px;
+  font-size: 30px;
+}
+
+.rating label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  cursor: pointer;
+}
+
+.rating label:last-child {
+  position: static;
+}
+
+.rating label:nth-child(1) {
+  z-index: 5;
+}
+
+.rating label:nth-child(2) {
+  z-index: 4;
+}
+
+.rating label:nth-child(3) {
+  z-index: 3;
+}
+
+.rating label:nth-child(4) {
+  z-index: 2;
+}
+
+.rating label:nth-child(5) {
+  z-index: 1;
+}
+
+.rating label input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.rating label .icon {
+  float: left;
+  color: transparent;
+}
+
+.rating label:last-child .icon {
+  color: #000;
+}
+
+.rating:not(:hover) label input:checked ~ .icon,
+.rating:hover label:hover input ~ .icon {
+  color: #f2b01e;
+}
+
+.rating label input:focus:not(:checked) ~ .icon:last-child {
+  color: #000;
+  text-shadow: 0 0 5px #09f;
+}

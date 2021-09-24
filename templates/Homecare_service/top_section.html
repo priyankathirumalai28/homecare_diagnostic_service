@@ -1,0 +1,59 @@
+{% block content %}
+{% load static %}
+<div class="top-menu">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-sm-4 col-xs-4">
+                <a href="{% url 'index' %}">
+                    <img src='{% static "images/Homecare_name_logo.png" %}' alt="Home" class="img-fluid mb-2" width="400" height="130">
+                </a>
+            </div>
+
+            <div class="col-md-9 col-sm-8 col-xs-8 left-align">
+                <div style="width: 100%;" class="logo-menu-right">
+                    <ul class="social-network social-circle circle-main-wrap list-inline" style="margin-top: 15px;">
+                        <li>
+                            <a data-toggle="modal" data-target="#c2Call" title="phone">
+                                <i class="feather-phone"></i>
+                            </a>
+                            <div class="one">+91-916730003</div>
+                        </li>
+                        <li>
+                            <a data-toggle="modal" data-target="#c2Call" title="Request for Call">
+                                <i class="feather-phone-call"></i>
+                            </a>
+                            <div class="one">Request a Call</div>
+                        </li>
+                        <li>
+                            <a data-toggle="modal" data-target="#c2Call" title="Find Location">
+                                <i class="feather-map-pin"></i>
+                            </a>
+                            <div class="one">Location</div>
+                        </li>
+                        <li>
+                            <a data-toggle="modal" data-target="#c2Call" title="Request for Call">
+                                <i class="feather-calendar"></i>
+                            </a>
+                            <div class="one">Book Appoinment</div>
+                        </li>
+                        <li>
+                            <a data-toggle="modal" data-target="#c2Call" title="Request for Call">
+                                <i class="feather-server"></i>
+                            </a>
+                            <div class="one">Services</div>
+                        </li>
+                        <li>
+                            <a data-toggle="modal" data-target="#c2Call" title="Request for Call">
+                                <i class="feather-package"></i>
+                            </a>
+                            <div class="one">Packages</div>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

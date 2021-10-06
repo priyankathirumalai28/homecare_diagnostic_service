@@ -18,7 +18,7 @@
             </div>
             <div class="col-md-12 col-sm-12 col-xs-12">
                 <div class="form-group">
-                    <select class="form-select mb-3" name="fgender">
+                    <select class="form-control" name="fgender">
                         <option value="" disabled selected>Gender</option>
                         <option>Male</option>
                         <option>Female</option>
@@ -52,12 +52,24 @@
                      <input type="text" name="fpincode" id="" class="form-control" placeholder="Pincode">
                 </div>
             </div>
-            <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class="col-md-6 col-sm-6 col-xs-6">
                 <div class="form-group">
-                    <div class="datetimepicker">
-                        <input type="date" id="date" class="form-control">
-                        <span></span>
-                        <input type="time" id="time" class="form-control">
+                    <div class = 'input-group date' id='datepicker'>
+                        <input type = 'text' class="form-control" placeholder="Date"/>
+
+                        <span class = "input-group-addon">
+                            <span class="glyphicon glyphicon-calendar"></span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-6 col-xs-6">
+                <div class="form-group">
+                    <div class = 'input-group date' id='timepicker'>
+                        <input type = 'text' class="form-control" placeholder="Time"/>
+                        <span class = "input-group-addon">
+                            <span class="glyphicon glyphicon-time"></span>
+                        </span>
                     </div>
                 </div>
             </div>

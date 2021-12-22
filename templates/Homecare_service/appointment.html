@@ -1,83 +1,86 @@
 {% block content %}
 {% load static %}
 <br>
-<div class="container book_appointment">
-    <h2 class="center-align">Book Your Appointment For Home Collection</h2>
-    <form id="quick_appointment_widget" class="quick_appointment_widget quick_appointment_widget_form">
-        <div class="appointment_response"></div>
-        <div class="row">
-            <div class="col-md-12 col-sm-12 col-xs-12">
-                <div class="form-group">
-                    <input type="text" name="fname" id="" class="form-control" placeholder="Name">
-                </div>
+<div class="modal fade" id="appointment_modal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="myModalLabel">Book Your Appointment For Home Collection </h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">×</span>
+                </button>
             </div>
-            <div class="col-md-12 col-sm-12 col-xs-12">
-                <div class="form-group">
-                    <input type="text" name="fage" id="" class="form-control" placeholder="Age">
-                </div>
+            <div class="modal-body">
+                <div class="container book_appointment">
+                    <form id="quick_appointment_widget" class="quick_appointment_widget">
+
+                                <div class="form-group">
+                                    <input type="text" name="fname" id="" class="form-control modal_form" placeholder="Name">
+                                </div>
+
+                                <div class="form-group">
+                                    <input type="text" name="fage" id="" class="form-control modal_form" placeholder="Age">
+                                </div>
+
+                                <div class="form-group">
+                                    <select class="form-control" name="fgender">
+                                        <option value="" disabled selected>Gender</option>
+                                        <option>Male</option>
+                                        <option>Female</option>
+                                        <option>Others</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group">
+                                    <input type="text" name="fcontact" id="" class="form-control" placeholder="Phone">
+                                </div>
+
+                                <div class="form-group">
+                                    <input type="text" name="fmail" id="" class="form-control" placeholder="Email">
+                                </div>
+
+                                <div class="form-group">
+                                    <textarea class="form-control" rows="2" placeholder="Address" name="faddress"></textarea>
+                                </div>
+                                <div class="form-group col">
+                                    <input type="text" name="fcity" id="" class="form-control" placeholder="City">
+                                </div>
+
+                                <div class="form-group col">
+                                     <input type="text" name="fpincode" id="" class="form-control" placeholder="Pincode">
+                                </div>
+
+
+                                <div class="form-group">
+                                    <div class = 'input-group date' id='datepicker'>
+                                        <input type = 'text' class="form-control" placeholder="Date"/>
+
+                                        <span class = "input-group-addon">
+                                            <span class="glyphicon glyphicon-calendar"></span>
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <div class = 'input-group date' id='timepicker'>
+                                        <input type = 'text' class="form-control" placeholder="Time"/>
+                                        <span class = "input-group-addon">
+                                            <span class="glyphicon glyphicon-time"></span>
+                                        </span>
+                                    </div>
+                                </div>
+
+
+                        </div>
+                    </form>
             </div>
-            <div class="col-md-12 col-sm-12 col-xs-12">
-                <div class="form-group">
-                    <select class="form-control" name="fgender">
-                        <option value="" disabled selected>Gender</option>
-                        <option>Male</option>
-                        <option>Female</option>
-                        <option>Others</option>
-                    </select>
-                </div>
-            </div>
-            <div class="col-md-12 col-sm-12 col-xs-12">
-                <div class="form-group">
-                    <input type="text" name="fcontact" id="" class="form-control" placeholder="Phone">
-                </div>
+            <div class="center-align">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button></div>
             </div>
 
-            <div class="col-md-12 col-sm-12 col-xs-12">
-                <div class="form-group">
-                    <input type="text" name="fmail" id="" class="form-control" placeholder="Email">
-                </div>
-            </div>
-            <div class="col-md-12 col-sm-12 col-xs-12">
-                <div class="form-group">
-                    <textarea class="form-control" rows="2" placeholder="Address" name="faddress"></textarea>
-                </div>
-            </div>
-            <div class="col-md-12 col-sm-12 col-xs-12">
-                <div class="form-group">
-                    <input type="text" name="fcity" id="" class="form-control" placeholder="City">
-                </div>
-            </div>
-            <div class="col-md-12 col-sm-12 col-xs-12">
-                <div class="form-group">
-                     <input type="text" name="fpincode" id="" class="form-control" placeholder="Pincode">
-                </div>
-            </div>
-            <div class="col-md-6 col-sm-6 col-xs-6">
-                <div class="form-group">
-                    <div class = 'input-group date' id='datepicker'>
-                        <input type = 'text' class="form-control" placeholder="Date"/>
-
-                        <span class = "input-group-addon">
-                            <span class="glyphicon glyphicon-calendar"></span>
-                        </span>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-sm-6 col-xs-6">
-                <div class="form-group">
-                    <div class = 'input-group date' id='timepicker'>
-                        <input type = 'text' class="form-control" placeholder="Time"/>
-                        <span class = "input-group-addon">
-                            <span class="glyphicon glyphicon-time"></span>
-                        </span>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-12 col-sm-12 col-xs-12 center-align">
-                <button class="btn btn-success">Submit</button>
-			    <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
-            </div>
         </div>
-    </form>
+    </div>
+    <br>
 </div>
 {% endblock %}

@@ -1,79 +1,93 @@
 {% block content %}
 {% load static %}
 <br>
-<div class="container book_appointment">
-    <h2>Submit Your FeedBack</h2>
-    <form id="quick_appointment_widget" class="quick_appointment_widget quick_appointment_widget_form">
-        <div class="appointment_response"></div>
-        <div class="row">
-            <div class="col-md-12 col-sm-12 col-xs-12">
-                <div class="form-group">
-                    <input type="text" name="fname" id="" class="form-control" placeholder="Name">
-                </div>
+<div class="modal fade" id="feedbackmodel" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header ">
+                <h4 class="modal-title main-font-style center-align logo-text-color" id="myModalLabel">Rate About Us</h4>
+                <button type="button" class="close" data    -dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">×</span>
+                </button>
             </div>
-            <div class="col-md-12 col-sm-12 col-xs-12">
-                <div class="form-group">
-                    <input type="text" name="fmail" id="" class="form-control" placeholder="Email">
-                </div>
-            </div>
-            <div class="col-md-12 col-sm-12 col-xs-12">
-                <div class="form-group">
-                    <select class="form-control" name="fgender">
-                        <option value="" disabled selected>Gender</option>
-                        <option>Male</option>
-                        <option>Female</option>
-                        <option>Others</option>
-                    </select>
-                </div>
-            </div>
-            <div class="col-md-12 col-sm-12 col-xs-12">
-                <div class="form-group">
-                    <textarea class="form-control" rows="2" placeholder="Comments" name="fcomments"></textarea>
-                </div>
-            </div>
-            <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class="modal-body">
+                <div class="container feedback">
+                        <form id="quick_appointment_widget" class="quick_appointment_widget quick_appointment_widget_form">
+                        <div class="appointment_response"></div>
+                        <div class="row">
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <div class="form-group">
+                                    <input type="text" name="fname" id="" class="form-control" placeholder="Name">
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <div class="form-group">
+                                    <input type="text" name="fmail" id="" class="form-control" placeholder="Email">
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <div class="form-group">
+                                    <select class="form-control" name="fgender">
+                                        <option value="" disabled selected>Gender</option>
+                                        <option>Male</option>
+                                        <option>Female</option>
+                                        <option>Others</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <div class="form-group">
+                                    <textarea class="form-control" rows="2" placeholder="Comments" name="fcomments"></textarea>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-sm-12 col-xs-12">
 
-                <span>Rate Our Service: </span>
-                <div class="form-group rating">
+                                <span>Rate Our Service: </span>
+                                <div class="form-group rating">
 
-                    <label>
-                        <input type="radio" name="stars" value="1" />
-                        <span class="icon">★</span>
-                    </label>
-                  <label>
-                    <input type="radio" name="stars" value="2" />
-                    <span class="icon">★</span>
-                    <span class="icon">★</span>
-                  </label>
-                  <label>
-                    <input type="radio" name="stars" value="3" />
-                    <span class="icon">★</span>
-                    <span class="icon">★</span>
-                    <span class="icon">★</span>
-                  </label>
-                  <label>
-                    <input type="radio" name="stars" value="4" />
-                    <span class="icon">★</span>
-                    <span class="icon">★</span>
-                    <span class="icon">★</span>
-                    <span class="icon">★</span>
-                  </label>
-                  <label>
-                    <input type="radio" name="stars" value="5" />
-                    <span class="icon">★</span>
-                    <span class="icon">★</span>
-                    <span class="icon">★</span>
-                    <span class="icon">★</span>
-                    <span class="icon">★</span>
-                  </label>
+                                    <label>
+                                        <input type="radio" name="stars" value="1" />
+                                        <span class="icon">★</span>
+                                    </label>
+                                  <label>
+                                    <input type="radio" name="stars" value="2" />
+                                    <span class="icon">★</span>
+                                    <span class="icon">★</span>
+                                  </label>
+                                  <label>
+                                    <input type="radio" name="stars" value="3" />
+                                    <span class="icon">★</span>
+                                    <span class="icon">★</span>
+                                    <span class="icon">★</span>
+                                  </label>
+                                  <label>
+                                    <input type="radio" name="stars" value="4" />
+                                    <span class="icon">★</span>
+                                    <span class="icon">★</span>
+                                    <span class="icon">★</span>
+                                    <span class="icon">★</span>
+                                  </label>
+                                  <label>
+                                    <input type="radio" name="stars" value="5" />
+                                    <span class="icon">★</span>
+                                    <span class="icon">★</span>
+                                    <span class="icon">★</span>
+                                    <span class="icon">★</span>
+                                    <span class="icon">★</span>
+                                  </label>
+                                </div>
+                            </div>
+
+                        </div>
+                    </form>
+                </div>
+                <div class="center-align">
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-primary">Submit</button></div>
                 </div>
             </div>
-            <div class="col-md-6 col-sm-6 col-xs-6 center-align">
-                <br>
-                <button class="btn btn-success">Submit</button>
-			    <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
             </div>
         </div>
-    </form>
-</div>
+    </div>
 {% endblock %}

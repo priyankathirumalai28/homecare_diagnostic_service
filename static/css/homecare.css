@@ -4,6 +4,15 @@ body {
 div {
     display: block;
 }
+.main-font-style{
+  font-family: "Times New Roman", Times, serif;
+}
+.logo-text-color{
+    font-weight:Bold;
+  background: linear-gradient(0deg, #3c994a, #210b7a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 .top-menu {
     min-height: 0px;
 }
@@ -46,9 +55,17 @@ ol, ul {
     font-size: 14px !important;
     }
 
+ul.about{
+    padding: 0;
+    float: left;
+    list-style-type: none;
+
+}
+
 ul.social-network {
     padding: 0;
     float: right;
+
 }
 ul.social-network li {
     /* display: inline; */
@@ -132,7 +149,13 @@ color: #210b7a;
 align-content: left;
 color: #210b7a;
 }
+.left-align-text{
+align-content: left;
+}
 
+.center-align-text{
+align-content: center;
+}
 .blue-border{
  border: 2px solid #210b7a;
  border-radius: 30px;

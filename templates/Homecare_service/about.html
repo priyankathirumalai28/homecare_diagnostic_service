@@ -2,7 +2,34 @@
 {% load static %}
 <div class="container">
     <div class="row">
-        <div class="col-md-8 col-sm-8 col-xs-8 blue-border" id="about_content"><br>
+        <div class="col-md-8 col-sm-8 col-xs-8" id="about_content"><br>
+            <h3 class="modal-title main-font-style left-align-text logo-text-color">SERVICES THROUGH DIGITAL HEALTHCARE PLATFORM</h3>
+            <div class="center-align">
+                <ul class="about list-inline center-align">
+                    <li>
+                        <span data-toggle="modal" data-target="#c2Call" title="phone">
+                            <i class="feather-award"></i>
+                        </span>Accredited
+                    </li>
+                    <li>
+                        <span data-toggle="modal" data-target="#c2Call" title="phone">
+                        <img src='{% static "images/affordable.png" %}' alt="Home" class="img-fluid mb-2" width="40" height="13">
+                        </span>Affordable
+                    </li>
+                    <li>
+                        <span data-toggle="modal" data-target="#c2Call" title="phone">
+                            <i class="feather-home"></i>
+                        </span>Home Collection
+                    </li>
+                     <li>
+                        <span data-toggle="modal" data-target="#c2Call" title="phone">
+                            <i class="feather-clock"></i>
+                        </span>24*7 Online Report
+                    </li>
+
+                </ul>
+            </div>
+            <br>
             <p>Home care diagnostic service one of the largest service provider in Chennai city ,it has been recognized
                 by government and various hospitals for successful ventures and diagnostic service for over a decade.
                 It's one of CHENNAI'S leading providers of diagnostic information services,
@@ -11,8 +38,15 @@
                 accurate results with Pre-bar coded tubes,Hygienic sample draw accessories,Insulated box for safe
                 transportation of samples,Temperature controlled to ensure sample quality
             </p>
+            <br>
+
+            <br>
+            <div class="left-align-text">
+            <h4 class="main-font-style left-align-text logo-text-color" id="myModalLabel">OUR SERVICE CYCLE</h4>
             <img src='{% static "images/lifecycle.png" %}' alt="life_cylce"
                                class="img-fluid mb-2"/>
+                               </div>
+
         </div>
         <div class="col-md-4 col-sm-4 col-xs-4">
             {% include "Homecare_service/offers.html" %}

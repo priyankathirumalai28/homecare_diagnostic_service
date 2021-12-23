@@ -2,8 +2,7 @@
 {% load static %}
 <div class="container main-content-column">
     <div class="row">
-        <div class="col-md-8 col-sm-8 col-xs-8" id="about_content"><br>
-            <h3 class="modal-title main-font-style left-align-text logo-text-color">SERVICES THROUGH DIGITAL HEALTHCARE PLATFORM</h3>
+        <div class="col-md-12 col-sm-12 col-xs-12" id="about_content"><br>
 
             <br>
             <p>Home care diagnostic service one of the largest service provider in Chennai city ,it has been recognized
@@ -19,22 +18,23 @@
             <br>
             <div class="left-align-text">
             <h4 class="main-font-style left-align-text logo-text-color" id="myModalLabel">OUR SERVICE CYCLE</h4>
-            <img src='{% static "images/lifecycle.png" %}' alt="life_cylce"
-                               class="img-fluid mb-2"/>
+
                                </div>
 
         </div>
-        <div class="col-md-4 col-sm-4 col-xs-4">
-            {% include "Homecare_service/offers.html" %}
-
+        <div class="col-md-12 col-sm-12 col-xs-12">
+            {% include "Homecare_service/service_life_cycle.html" %}
+        </div>
+        <div>
+            {% include "Homecare_service/offer.html" %}
         </div>
         <div class="col-md-12 col-sm-12 col-xs-12">
             {% include "Homecare_service/services.html" %}
         </div>
-        <div class="col-md-12 col-sm-12 col-xs-12" id="book_appointment_form">
+        <div id="book_appointment_form">
             {% include "Homecare_service/appointment.html" %}
         </div>
-        <div class="col-md-6 col-sm-6 col-xs-6">
+        <div >
             {% include "Homecare_service/feedback.html" %}
         </div>
         <div class="col-md-12 col-sm-12 col-xs-12">

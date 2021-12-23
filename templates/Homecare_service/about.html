@@ -1,34 +1,10 @@
 {% block content %}
 {% load static %}
-<div class="container">
+<div class="container main-content-column">
     <div class="row">
         <div class="col-md-8 col-sm-8 col-xs-8" id="about_content"><br>
             <h3 class="modal-title main-font-style left-align-text logo-text-color">SERVICES THROUGH DIGITAL HEALTHCARE PLATFORM</h3>
-            <div class="center-align">
-                <ul class="about list-inline center-align">
-                    <li>
-                        <span data-toggle="modal" data-target="#c2Call" title="phone">
-                            <i class="feather-award"></i>
-                        </span>Accredited
-                    </li>
-                    <li>
-                        <span data-toggle="modal" data-target="#c2Call" title="phone">
-                        <img src='{% static "images/affordable.png" %}' alt="Home" class="img-fluid mb-2" width="40" height="13">
-                        </span>Affordable
-                    </li>
-                    <li>
-                        <span data-toggle="modal" data-target="#c2Call" title="phone">
-                            <i class="feather-home"></i>
-                        </span>Home Collection
-                    </li>
-                     <li>
-                        <span data-toggle="modal" data-target="#c2Call" title="phone">
-                            <i class="feather-clock"></i>
-                        </span>24*7 Online Report
-                    </li>
 
-                </ul>
-            </div>
             <br>
             <p>Home care diagnostic service one of the largest service provider in Chennai city ,it has been recognized
                 by government and various hospitals for successful ventures and diagnostic service for over a decade.
@@ -60,6 +36,9 @@
         </div>
         <div class="col-md-6 col-sm-6 col-xs-6">
             {% include "Homecare_service/feedback.html" %}
+        </div>
+        <div class="col-md-12 col-sm-12 col-xs-12">
+            {% include "Homecare_service/bottom_section.html" %}
         </div>
 
     </div>

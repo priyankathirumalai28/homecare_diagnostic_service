@@ -47,7 +47,7 @@ ol, ul {
 }
 
 .one {
-    color: #3c994a;
+    color: Black;
     font-size: 12px;
     font-weight:Bold
 }
@@ -156,6 +156,11 @@ align-content: left;
 .center-align-text{
 align-content: center;
 }
+
+.right-align-text{
+align-content: right;
+}
+
 .blue-border{
  border: 2px solid #210b7a;
  border-radius: 30px;
@@ -318,3 +323,44 @@ word-spacing: 5px;
 }
 .container book_appointment
 {width: 100%}
+
+
+.main_header, .main_footer {
+    height: auto;
+    background: #E7F9F6;
+}
+.main-content-column {
+    height: auto;
+    background: #E7F9F6;
+}
+.main_footer .footer_wrapper {
+    margin: 0 auto;
+    max-width: 1400px;
+    color: Black;
+    font-weight: Bold;
+}
+
+E2E2E2
+.ml-4 ml-xl-5
+{
+margin-left: 3rem
+}
+.ml-4, .mx-4 {
+    margin-left: 1.5rem
+}
+.divide
+{
+margin-top: 1em;
+border-bottom: 0.75px
+ solid #C1C1C1;
+ }
+
+.float-right{
+display: flex;
+justify-content: flex-end
+}
+.logo-fluid  {
+    height: 120;
+    max-width: 100%;
+    width: 200;
+}

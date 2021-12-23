@@ -1,36 +1,43 @@
 {% block content %}
 {% load static %}
 <div class="top-menu">
-    <div class="container">
+    <div class="container main_header">
         <div class="row">
-            <div class="col-md-3 col-sm-4 col-xs-4">
+            <div class="col-md-6 col-sm-6 col-xs-6">
                 <a href="{% url 'index' %}">
-                    <img src='{% static "images/Homecare_name_logo.png" %}' alt="Home" class="img-fluid mb-2" width="400" height="130">
+                    <img src='{% static "images/Homecare_name_logo.png" %}' alt="Home" class="logo-fluid img-fluid mb-2">
                 </a>
+                <div class="center-align">
+                <ul class="about list-inline center-align">
+                    <li>
+                        <span data-toggle="modal" data-target="#c2Call" title="phone">
+                            <i class="feather-award"></i>
+                        </span>Accredited
+                    </li>
+                    <li>
+                        <span data-toggle="modal" data-target="#c2Call" title="phone">
+                        <img src='{% static "images/affordable.png" %}' alt="Home" class="img-fluid mb-2" width="40" height="13">
+                        </span>Affordable
+                    </li>
+                    <li>
+                        <span data-toggle="modal" data-target="#c2Call" title="phone">
+                            <i class="feather-home"></i>
+                        </span>Home Collection
+                    </li>
+                     <li>
+                        <span data-toggle="modal" data-target="#c2Call" title="phone">
+                            <i class="feather-clock"></i>
+                        </span>24*7 Online Report
+                    </li>
+
+                </ul>
+            </div>
             </div>
 
-            <div class="col-md-9 col-sm-8 col-xs-8 left-align">
+            <div class="col-md-6 col-sm-6 col-xs-6 left-align">
                 <div style="width: 100%;" class="logo-menu-right">
                     <ul class="social-network social-circle circle-main-wrap list-inline" style="margin-top: 25px;">
-                        <li>
 
-                            <a href="#" class="btn btn-sm btn-primary-outline" data-toggle="modal" data-target="#contact">
-                                <span data-toggle="modal" data-target="#c2Call" title="phone">
-                                    <i class="feather-phone"></i>
-                                </span>
-                            </a>
-                            <div class="one">Contact</div>
-                        </li>
-
-                        <li>
-
-                            <a href="#" class="btn btn-sm btn-primary-outline" data-toggle="modal" data-target="#location-model">
-                                <span data-toggle="modal" title="Find Location">
-                                    <i class="feather-map-pin"></i>
-                                </span>
-                            </a>
-                            <div class="one">Location</div>
-                        </li>
                         <li>
 
                             <a href="#" class="btn btn-sm btn-primary-outline" data-toggle="modal" data-target="#appointment_modal">
@@ -68,7 +75,8 @@
 
                     </ul>
                 </div>
-            </div>
+            </div><div class="divide"></div>
+    <div class="py-2 mx-md-3 mx-xl-5 px-md-3"> </div>
         </div>
     </div>
 </div>

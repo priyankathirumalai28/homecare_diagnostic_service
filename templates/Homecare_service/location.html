@@ -1,34 +1,23 @@
 {% block content %}
 {% load static %}
-<!-- <div class="modal fade" id="location-model" tabindex="-1" role="dialog" aria-labeled="basicModal" aria-hidden="true"> -->
-<!--     <div class="modal-dialog"> -->
-<!--         <div class="modal-content"> -->
-<!--             <div class="modal-header "> -->
-<!--                 <h4 class="modal-title main-font-style center-align logo-text-color" id="myModalLabel">Rate About Us</h4> -->
-<!--                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"> -->
-<!--                 <span aria-hidden="true">×</span> -->
-<!--                 </button> -->
-<!--             </div> -->
-<!--             <div class="modal-body"> -->
-<!--             </div> -->
-<!--             <div class="modal-footer"> -->
-<!--                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button> -->
-<!--                 <button type="button" class="btn btn-primary">Submit</button></div> -->
-<!--             </div> -->
-<!--         </div> -->
-<!--     </div> -->
-<!-- </div> -->
-<div class="modal fade" id="location-model" role="dialog" >
-            <div class="modal-dialog modal-lg">
-                <div class="modal-content" id="back" >
-                    <div class="modal-header">
-                    <h4>Contact<h4>
+<div class="modal myMapModal fade" id="myMapModal" >
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Title Map modal</h4>
                 </div>
-                <div class="modal-body">
-                    <div id="map"></div>
+                <div class="modal-body map-modal">
+
+                            <div class="mapouter"><div class="gmap_canvas"><iframe width="600" height="500" id="map_canvas" src="https://maps.google.com/maps?q=university%20of%20san%20francisco&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.pureblack.de"></a></div><style>.mapouter{text-align:right;height:500px;width:600px;}.gmap_canvas {overflow:hidden;background:none!important;height:200px;width:300px;}</style></div>
+
+
                 </div>
                 <div class="modal-footer">
-                    <a class="btn btn-default" data-dismiss="modal">Close</a>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
                 </div>
             </div>
+        </div>
+    </div>
+
 {% endblock %}

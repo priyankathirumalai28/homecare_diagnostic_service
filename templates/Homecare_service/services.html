@@ -1,7 +1,7 @@
 {% block content %}
 {% load static %}
 <div class="container services" id='service'>
-    <h2 class="center-align-text logo-text-color headers">Services At Your Door Step</h2>
+    <h3 class="modal-title main-font-style left-align-text logo-text-color">SERVICES AT YOUR DOOR STEP</h3>
     <div class="row">
         <div class="service-box col-md col-sm col-xs">
             &nbsp; &nbsp; <img src='{% static "images/blood_test.png" %}' alt="blood_test"
@@ -12,18 +12,18 @@
         &nbsp; &nbsp; &nbsp;<img src='{% static "images/urine_test.png" %}' alt="urine_test"
                                class="img-fluid mb-2 img-background-color" width="50" height="40"/>&nbsp; &nbsp; &nbsp; <span class="service-name">All Urine Analysis Test</span>
         </div>
-    </div>
-    <div class="row">
         <div class="service-box col-md col-sm col-xs">
         &nbsp; &nbsp; &nbsp;<img src='{% static "images/motion_test.png" %}' alt="motion_test"
                                class="img-fluid mb-2 img-background-color" width="40" height="40"/>&nbsp; &nbsp; &nbsp; <span class="service-name">All Motion Related Test</span>
         </div>
-            &nbsp; <div class="service-box col-md col-sm col-xs">
+        <div class="service-box col-md col-sm col-xs">
         &nbsp; &nbsp; &nbsp;<img src='{% static "images/covid_rt_pcr.png" %}' alt="covid_19_rt_pcr"
                                class="img-fluid mb-2 img-background-color" width="40" height="40"/>&nbsp; &nbsp; &nbsp; <span class="service-name">COVID-19 RT PCR Test</span>
         </div>
     </div>
     <div class="row">
+
+            &nbsp;
         <div class="service-box col-md col-sm col-xs">
         &nbsp; &nbsp; &nbsp;<img src='{% static "images/covid_antibody_test.png" %}' alt="covid_antibody_test"
                                class="img-fluid mb-2 img-background-color" width="40" height="40"/>&nbsp; &nbsp; &nbsp; <span class="service-name">COVID Antibody Test</span>
@@ -32,8 +32,6 @@
         &nbsp; &nbsp; &nbsp;<img src='{% static "images/ecg.png" %}' alt="ecg"
                                class="img-fluid mb-2 img-background-color" width="40" height="40"/>&nbsp; &nbsp; &nbsp; <span class="service-name">ECG At Home</span>
         </div>
-    </div>
-    <div class="row">
         <div class="service-box col-md col-sm col-xs">
         &nbsp; &nbsp; &nbsp;<img src='{% static "images/x_ray.png" %}' alt="xray"
                                class="img-fluid mb-2 img-background-color" width="40" height="40"/>&nbsp; &nbsp; &nbsp; <span class="service-name">X-Ray At Home</span>
@@ -44,15 +42,14 @@
         </div>
     </div>
     <div class="row">
-        <div class="service-box col-md col-sm col-xs">
+        <div class="service-box col-md-3 col-sm-3 col-xs-3">
         &nbsp; &nbsp; &nbsp;<img src='{% static "images/bp.png" %}' alt="bp"
                                class="img-fluid mb-2 img-background-color" width="40" height="40"/>&nbsp; &nbsp; &nbsp; <span class="service-name">BP Checkup</span>
         </div>
-        &nbsp;<div class="service-box col-md col-sm col-xs">
+        &nbsp;<div class="service-box col-md-3 col-sm-3 col-xs-3">
         &nbsp; &nbsp; &nbsp;<img src='{% static "images/nebulizer.png" %}' alt="nebulizer"
                                class="img-fluid mb-2 img-background-color" width="40" height="40"/>&nbsp; &nbsp; &nbsp; <span class="service-name">Nebulizer</span>
         </div>
     </div>
-
 </div>
 {% endblock %}

@@ -396,6 +396,16 @@ width:500px; height:300px;
 .facebook:hover {
     color: #4267B2;
 }
+.mail:hover {
+    color: #ea4335;
+}
+.phone:hover {
+    color: #00b488;
+}
+
+.whatsapp:hover {
+    color: #43d854;
+}
 .quick_link_property:hover{
 color: #4267B2;
 cursor: pointer;

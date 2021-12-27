@@ -2,61 +2,36 @@
 {% load static %}
 <div class="top-menu">
     <div class="container main_header">
-        <div class="row">
-            <div class="col-md-6 col-sm-6 col-xs-6">
+        <div class="row top_section_height">
+            <div class="col-md-4 col-sm-4 col-xs-4">
                 <a href="{% url 'index' %}">
                     <img src='{% static "images/Homecare_name_logo.png" %}' alt="Home" class="logo-fluid img-fluid mb-2">
                 </a>
                 <h5 class="modal-title main-font-style left-align-text logo-text-color">SHIV HOMECARE DIAGNOSTICS SERVICE Pvt Ltd.</h5>
-
-
             </div>
-
-            <div class="col-md-6 col-sm-6 col-xs-6 left-align">
-                <div style="width: 100%;" class="logo-menu-right">
-                    <ul class="social-network social-circle circle-main-wrap list-inline" style="margin-top: 25px;">
-                        <li>
-
-                            <a href="#" class="btn btn-sm btn-primary-outline" data-toggle="modal" data-target="#appointment_modal">
-                                <span data-toggle="modal" title="Book Appointment">
-                                    <i class="feather-calendar"></i>
-                                </span>
-                            </a>
-                            <div class="one">Book Appointment</div>
-                        </li>
-                        <li>
-                            <a href="#service" class="btn btn-sm btn-primary-outline" data-toggle="modal" data-target="#service_at_home">
-                                <span data-toggle="modal" title="Services">
-                                        <i class="feather-server"></i>
-                                </span>
-                            </a>
-                            <div class="one">Services</div>
-                        </li>
-                        <li>
-                        <a class="btn btn-sm btn-primary-outline" data-toggle="modal" data-target="#basicModal">
-                            <span data-toggle="modal" title="Packages">
-                                    <i class="feather-package"></i>
-                            </span>
-                        </a>
-                        <div class="one">Packages</div>
-                        </li>
-                        <li>
-                        <a class="btn btn-sm btn-primary-outline" data-toggle="modal" data-target="#feedbackmodel">
-                            <span data-toggle="modal" title="Feedback">
-                                    <i class="feather-message-circle"></i>
-                            </span>
-                        </a>
-                        <div class="one">Feedback</div>
-
-                        </li>
-
-                    </ul>
+            <div class="col-md-8 col-sm-8 col-xs-8 ">
+                <div class="d-flex flex-column">
+                    <div class="logo-menu-right p-2 bd-highlight" align="right">
+                        <img src='{% static "images/iso.png" %}' alt="iso" style="height:46px; width:48px"/>
+                        <img src='{% static "images/nabl.png" %}' alt="nabl" style="height:65px; width:54px"/>
+                    </div>
+                    <br>
+                    <div class="logo-menu-right p-2 bd-highlight" align="right">
+                        <button type="button" class="btn btn-primary"><i class="far fa-calendar-alt"></i> Book Appointment</button>
+                        <button type="button" class="btn btn-primary"><i class="fas fa-server"></i> Services</button>
+                        <button type="button" class="btn btn-primary"><i class="fas fa-book-medical"></i> Package</button>
+                        <button type="button" class="btn btn-primary"><i class="fas fa-percentage"></i> Offers</button>
+                        <button type="button" class="btn btn-primary"><i class="fas fa-comments"></i> Feedback</button>
+                        <button type="button" class="btn btn-primary"><i class="fas fa-phone-alt"></i> Request a call</button>
+                    </div>
                 </div>
 
+
             </div>
-            <div class="divide"></div>
-    <div class="py-2 mx-md-3 mx-xl-5 px-md-3"> </div>
+
         </div>
+        <div class="top_section_divide"></div>
+        <div class="py-2 mx-md-3 mx-xl-5 px-md-3"> </div>
     </div>
 </div>
 

@@ -116,20 +116,8 @@ ul.social-network li {
 }
 .logo-menu-right {
     float: right;
-    margin-top: 30px;
 }
-.logo-menu-right ul li {
-    padding-left: 0px;
-    height: 23px;
-    position: relative;
-    float: left;
-    font-size: 14px;
-    color: #0e0e0e;
-    font-weight: 400;
-    padding-right: 10px;
-    margin-right: 10px;
-    margin-bottom: 15px;
-}
+
 
 #about_content{
 text-align: justify;
@@ -352,6 +340,12 @@ border-image: linear-gradient(to right, #3c994a, #210b7a);
 border-image-slice: 1;
 width: 98%;
  }
+ .top_section_divide{
+ border-bottom: 0.75px solid;
+border-image: linear-gradient(to right, #3c994a, #210b7a);
+border-image-slice: 1;
+width: 98%;
+ }
 
 .float-right{
 display: flex;
@@ -449,4 +443,10 @@ flex: 0.5 0 0%;}
 .carousel {
     position: relative;
     width: 100%;
+}
+.top_section_height{
+height:auto;
+}
+
+.top_button_color{
 }

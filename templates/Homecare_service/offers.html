@@ -2,7 +2,7 @@
 {% load static %}
 <br>
 <div class="modal fade" id="offer_modal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
-    <div class="modal-dialog">
+    <div class="modal-dialog offer_modal_dialog">
         <div class="modal-content">
             <div class="modal-header main_header">
                 <div class="d-flex flex-row">
@@ -12,7 +12,7 @@
                         </a>
                     </div>
                     <div class="model_header_title">
-                        <h4 class="modal-title main-font-style logo-text-color center-align-text">Offers</h4>
+                        <h3 class="modal-title main-font-style logo-text-color center-align-text">Offers</h3>
                     </div>
                     <div class="model_header_close">
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -23,12 +23,18 @@
                 </div>
 
             </div>
-
             <div class="modal-body">
-                <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-                    <button type="button" class="btn btn-primary">Submit</button></div>
+                <div class="col-12">
+                    <div class="row">
+                        <div class="col-4 offer_box">Women</div>
+                        <div class="col-4 offer_box">Children</div>
+                        <div class="col-4 offer_box">Adult</div>
+                    </div>
                 </div>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-primary">Submit</button></div>
             </div>
             </div>
         </div>

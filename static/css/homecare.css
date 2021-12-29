@@ -475,3 +475,18 @@ height: 60;
  width: 100%;
 text-align: center;
 }
+.packages_box, .offer_box
+{
+    padding: 15px;
+    min-height: 250px;
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 20px;
+    margin: 1%;
+    width: 312px;
+}
+.package_modal_dialog, .offer_modal_dialog
+{
+width: 1000px !important;
+margin: 30px auto;
+}

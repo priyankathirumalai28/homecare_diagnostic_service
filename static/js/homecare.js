@@ -10,16 +10,6 @@ format: 'LT'
   });
 });
 
-// for scroll down to the Services list div
-$(document).ready(function() {
-          $('a[href^="#service"]').click(function() {
-          var hash = this.hash;
-              $('html, body').animate({
-                  scrollTop:  $(hash).offset().top
-                }, 500);
-              return false;
-            });
-        });
 $(document).ready(function () {
     $("#hcds_appointment").click(function(){
          $('#appointment_modal').modal('show');
@@ -36,5 +26,13 @@ $(document).ready(function () {
     $("#hcds_offer").click(function(){
          $('#offer_modal').modal('show');
     });
+    $("#hcds_service").click(function(){
+         var hash = this.hash;
+              $('html, body').animate({
+                  scrollTop:  $('#service').offset().top
+                }, 500);
+              return false;
+            });
+
 });
 

@@ -458,14 +458,12 @@ border-radius: 10%;
 .carousel {
     width: fit-content;
     }
-.feature-content{
-flex: 1 0 0%;}
 
-.feature-box
-{
-width: 100%;
-height: 2%;
-padding: 23px;
-margin-top: 10px;
-background: linear-gradient(to right, #729fcf, #dddddd);
+.feature-content{
+flex: 1 0 0%;
 }
+.banner_size{
+width: 1100;
+height: 400;
+}
+

@@ -407,8 +407,10 @@ cursor: pointer;
 }
 .quick_link_property h5:hover{
 font-weight:Bold;}
+
 .primary-content{
-flex: 1 0 0%;}
+flex: 1 0 0%;
+}
 
 .about-content {
   overflow-wrap: break-word;
@@ -440,13 +442,10 @@ flex: 0.5 0 0%;}
   text-decoration: none;
   width: 40%;
 }
-.top_section_height{
+.top_section_height
+{
 height:auto;
 }
-
-.top_button_color{
-}
-
 .our_features
 {
 border: 6px solid;
@@ -466,4 +465,13 @@ flex: 1 0 0%;
 width: 1100;
 height: 400;
 }
-
+.modal-logo-fluid{
+    height: 60;
+    width: 100;
+}
+.model_header_title
+{
+height: 60;
+ width: 100%;
+text-align: center;
+}

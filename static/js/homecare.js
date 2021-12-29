@@ -33,6 +33,15 @@ $(document).ready(function () {
                 }, 500);
               return false;
             });
+    $("#top_button").click(function(){
+    var bn = $('#top_button');
+     if($(window).scrollTop() > 300) {
+        bn.css({position:'fixed', bottom:'10px'});
+      }
+      else{
+        bn.css('position', 'static');
+      }
+    });
 
 });
 

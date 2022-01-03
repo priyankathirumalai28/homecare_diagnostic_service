@@ -12,7 +12,7 @@
                         </a>
                     </div>
                     <div class="model_header_title">
-                        <h3 class="modal-title main-font-style logo-text-color center-align-text">Book Your Appointment</h3>
+                        <h3 class="modal-title main-font-style logo-text-color center-align-text">Book Home Collection</h3>
                     </div>
                     <div class="model_header_close">
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -27,17 +27,17 @@
             <div class="modal-body">
                 <div class="container book_appointment">
 
-                    <form id="quick_appointment_widget" class="quick_appointment_widget">
+                    <form id="quick_appointment_widget" class="quick_appointment_widget" method="post">
                         <div class="form-group row">
                             <div class="col-xs">
-                                <input type="text" name="fname" class="form-control modal_form" placeholder="Name">
+                                <input type="text" name="fname" class="form-control modal_form" placeholder="Name" required>
                             </div>
 
                         </div>
 
                         <div class="form-group row">
                             <div class="col-xs-6">
-                                <input type="text" name="fage" id="" class="form-control modal_form" placeholder="Age">
+                                <input type="text" name="fage" class="form-control modal_form" placeholder="Age" required>
                             </div>
                             <div class="col-xs-6">
                                 <select class="form-control" name="fgender">
@@ -50,10 +50,10 @@
                         </div>
                         <div class="form-group row">
                             <div class="col-xs-6">
-                                <input type="text" name="fcontact" id="" class="form-control" placeholder="Phone">
+                                <input type="text" name="fcontact" class="form-control" placeholder="Phone">
                             </div>
                             <div class="col-xs-6">
-                                <input type="text" name="fmail" id="" class="form-control" placeholder="Email">
+                                <input type="text" name="fmail" class="form-control" placeholder="Email">
                             </div>
                         </div>
                         <div class="form-group row">
@@ -63,22 +63,22 @@
                         </div>
                         <div class="form-group row">
                             <div class="col-xs-6">
-                                <input type="text" name="fcity" id="" class="form-control" placeholder="City">
+                                <input type="text" name="fcity"  class="form-control" placeholder="City" required>
                             </div>
                             <div class="col-xs-6">
-                                <input type="text" name="fpincode" id="" class="form-control" placeholder="Pincode">
+                                <input type="text" name="fpincode" class="form-control" placeholder="Pincode" required>
                             </div>
                         </div>
                         <div class="form-group row">
                             <div class="col-xs-6">
                                 <div class = 'input-group date' id='datepicker'>
-                                    <input type = 'text' class="form-control" placeholder="Date"/>
+                                    <input type = 'text' class="form-control" placeholder="Date" required/>
                                         <span class = "input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
                                 </div>
                             </div>
                             <div class="col-xs-6">
                                 <div class = 'input-group date' id='timepicker'>
-                                    <input type = 'text' class="form-control" placeholder="Time"/>
+                                    <input type = 'text' class="form-control" placeholder="Time" required/>
                                     <span class = "input-group-addon">
                                         <span class="glyphicon glyphicon-time"></span>
                                     </span>

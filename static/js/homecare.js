@@ -33,15 +33,42 @@ $(document).ready(function () {
                 }, 500);
               return false;
             });
-    $("#top_button").click(function(){
-    var bn = $('#top_button');
-     if($(window).scrollTop() > 300) {
-        bn.css({position:'fixed', bottom:'10px'});
-      }
-      else{
-        bn.css('position', 'static');
-      }
-    });
 
 });
+jQuery(document).ready(function() {
+    var offset = 100;
+    var duration = 500;
+    jQuery(window).scroll(function() {
+        if (jQuery(this).scrollTop() > offset) {
+            jQuery('#top_button').removeClass("hidden")
+            jQuery('#top_button').fadeIn(duration);
+        } else {
+            jQuery('#top_button').addClass("hidden")
+            jQuery('top_button').fadeOut(duration);
+        }
+    });
 
+    jQuery('#top_button').click(function(event) {
+        event.preventDefault();
+        jQuery('html, body').animate({scrollTop: 0}, duration);
+        return false;
+    })
+});
+window.scrollTo({top: 0, behavior: 'smooth'});
+
+$(document).ready(function(){
+     $("#quick_appointment_widget").validate({
+    rules:{
+        name:{
+            required:true,
+            minLength:8
+        },
+    },
+    messages:{
+        name:{
+            required:"Please provide your Login",
+            minLength:"Your Login must be at least 8 characters"
+        },
+    }
+});
+});
